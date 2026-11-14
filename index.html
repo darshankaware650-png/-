@@ -1,156 +1,545 @@
 <!DOCTYPE html>
 <html lang="mr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#7d2027" />
-  <title>शुभविवाह | वैष्णवी & ऋषभ</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{--red:#9d3038;--deep:#70232b;--gold:#c49a52;--cream:#fffaf0;--ink:#4b2525}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;background:#f7eee2;color:var(--ink);font-family:"Noto Serif Devanagari",serif}
-    .page{width:min(920px,94%);margin:24px auto;background:var(--cream);position:relative;overflow:hidden;border:1px solid #d9bd8b;box-shadow:0 12px 45px #4b25251c}
-    .page:before{content:"";position:absolute;inset:12px;border:1px solid #d9bd8b;pointer-events:none}
-    .hero{min-height:88vh;padding:48px 26px 38px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;background:radial-gradient(ellipse at top,#fff 0%,#fffaf0 65%,#f8ecd9 100%)}
-    .topline{font-size:clamp(13px,2vw,18px);color:var(--deep);font-weight:700;letter-spacing:1px}
-    .ganesh{font-size:42px;margin:16px 0 4px}
-    .eyebrow{color:var(--gold);font-size:14px;letter-spacing:2px;margin-top:8px}
-    h1{font-size:clamp(48px,9vw,86px);line-height:1.25;color:var(--red);margin:8px 0 12px;font-weight:800;text-shadow:1px 2px #ead6b4}
-    .intro{font-size:18px;color:var(--deep);margin:0 0 20px}
-    .couple{font-size:clamp(25px,5vw,42px);font-weight:800;color:var(--red);line-height:1.7;margin:6px 0}
-    .aka{font-size:16px;color:var(--deep);font-weight:500}
-    .divider{display:flex;align-items:center;gap:14px;color:var(--gold);width:min(460px,85%);margin:22px auto}
-    .divider:before,.divider:after{content:"";height:1px;background:var(--gold);flex:1}
-    .date{font-size:clamp(18px,3vw,25px);font-weight:700;color:var(--deep);line-height:1.8}
-    .muhurta{font-size:16px;color:#78513c}
-    .scroll{position:absolute;bottom:18px;font-size:13px;color:#997b51;animation:bob 1.6s infinite}
-    @keyframes bob{50%{transform:translateY(6px)}}
-    section.content{padding:46px clamp(22px,6vw,70px);text-align:center;position:relative}
-    h2{font-size:25px;color:var(--red);margin:0 0 18px}
-    .names{font-size:18px;line-height:2.05}
-    .names strong{color:var(--deep)}
-    .label{color:var(--gold);font-weight:800;margin:18px 0 6px}
-    .two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
-    .panel{padding:20px 14px;border:1px solid #e1c99d;background:#fffdf8;border-radius:12px}
-    .panel h3{color:var(--red);font-size:20px;margin:0 0 10px}
-    .venue{font-size:20px;font-weight:800;color:var(--red);line-height:1.8}
-    .btn{display:inline-block;margin:12px 6px 0;padding:11px 20px;border-radius:30px;text-decoration:none;background:var(--red);color:#fff;font-weight:700;border:0;font-family:inherit;cursor:pointer}
-    .btn.outline{background:transparent;color:var(--red);border:1px solid var(--red)}
-    .countdown{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px 0}
-    .countdown div{background:#fff;border:1px solid #e4cea8;border-radius:10px;padding:12px 16px;min-width:76px}
-    .countdown b{display:block;font-size:25px;color:var(--red)}
-    .countdown span{font-size:12px;color:#795b45}
-    .family{line-height:2.1;font-size:16px}
-    .familygrid{display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;text-align:left;max-width:650px;margin:0 auto}
-    .familygrid p{margin:0;padding:5px 0;border-bottom:1px dashed #e7d6b8}
-    .closing{background:#f8efdf;padding:38px 20px;text-align:center;color:var(--deep);line-height:2}
-    footer{text-align:center;padding:22px;color:#8b6a4c;font-size:13px}
-    .flower{position:absolute;color:#e8d4ad;font-size:70px;opacity:.35;pointer-events:none}
-    .flower.left{left:12px;top:16px}.flower.right{right:12px;bottom:16px}
-    @media(max-width:620px){.page{width:100%;margin:0;border:0}.page:before{inset:7px}.hero{min-height:90svh;padding:55px 20px}.two{grid-template-columns:1fr}.familygrid{grid-template-columns:1fr}.content{padding:36px 22px}.ganesh{font-size:34px}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0f3b2e">
+<title>शुभविवाह | वैष्णवी & ऋषभ</title>
+<meta property="og:title" content="शुभविवाह | वैष्णवी & ऋषभ">
+<meta property="og:description" content="सोमवार, २८ डिसेंबर २०२६ · प्रसाद मंगलम कार्यालय, दर्यापूर">
+<meta property="og:image" content="images/photo-close.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Mukta:wght@400;500;600&family=Tiro+Devanagari+Marathi:ital@0;1&family=Noto+Serif+Devanagari:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --forest:#0f3b2e; --forest-deep:#0a2a21; --emerald:#1b6b52;
+  --gold:#d9b66a; --gold-soft:#ecd49a; --gold-hi:#f7e4ae;
+  --lilac:#f3e6f4; --lilac-deep:#e6cfe8; --blush:#f8e9ef;
+  --ink:#2c2230; --marigold:#f08a1c; --maroon:#7d2027;
+  --display:'Noto Serif Devanagari','Tiro Devanagari Marathi',serif;
+  --serif:'Tiro Devanagari Marathi','Cormorant Garamond',serif;
+  --sans:'Mukta',system-ui,sans-serif;
+  --latin:'Cormorant Garamond',serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--lilac);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.locked{overflow:hidden;height:100vh}
+img{max-width:100%;display:block}
+section{position:relative;padding:76px 22px;overflow:hidden}
+
+/* ---------- reusable backgrounds ---------- */
+.emerald{
+  background:
+    radial-gradient(120% 60% at 50% 0%,rgba(46,140,108,.55) 0%,rgba(46,140,108,0) 60%),
+    radial-gradient(90% 50% at 50% 100%,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 70%),
+    linear-gradient(180deg,#12503d 0%,#0f3b2e 50%,#0a2a21 100%);
+  color:var(--gold-soft);
+}
+.emerald::before{               /* big faint gold mandala line-art */
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.9;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220' fill='none' stroke='%23d9b66a' stroke-opacity='.17' stroke-width='1'%3E%3Ccircle cx='110' cy='110' r='96'/%3E%3Ccircle cx='110' cy='110' r='70'/%3E%3Ccircle cx='110' cy='110' r='26'/%3E%3Cpath d='M110 14c16 28 16 44 0 82-16-38-16-54 0-82zM110 206c16-28 16-44 0-82-16 38-16 54 0 82zM14 110c28-16 44-16 82 0-38 16-54 16-82 0zM206 110c-28-16-44-16-82 0 38 16 54 16 82 0z'/%3E%3Cpath d='M42 42c22 10 34 22 44 44-22-10-34-22-44-44zM178 42c-22 10-34 22-44 44 22-10 34-22 44-44zM42 178c22-10 34-22 44-44-22 10-34 22-44 44zM178 178c-22-10-34-22-44-44 22 10 34 22 44 44z'/%3E%3C/svg%3E");
+  background-size:220px 220px;
+}
+.emerald>*{position:relative;z-index:1}
+
+.lilac{
+  background:
+    radial-gradient(60% 30% at 15% 8%,rgba(255,214,236,.8),transparent 70%),
+    radial-gradient(60% 30% at 90% 40%,rgba(214,190,242,.55),transparent 70%),
+    radial-gradient(70% 30% at 10% 85%,rgba(255,226,214,.7),transparent 70%),
+    var(--lilac);
+}
+.lilac::before{                  /* tiny floral dots, like the paper in the video */
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.55;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cg fill='%23c9a45a' fill-opacity='.28'%3E%3Ccircle cx='15' cy='15' r='1.6'/%3E%3Ccircle cx='60' cy='48' r='1.6'/%3E%3Cpath d='M70 12c3 4 3 7 0 11-3-4-3-7 0-11zM28 62c3 4 3 7 0 11-3-4-3-7 0-11z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.lilac>*{position:relative;z-index:1}
+
+.corner{position:absolute;width:120px;height:120px;pointer-events:none;z-index:1;opacity:.85;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120' fill='none' stroke='%23d9b66a' stroke-width='1.2' stroke-linecap='round'%3E%3Cpath d='M4 116V30C4 14 14 4 30 4h86'/%3E%3Cpath d='M12 116V34c0-12 10-22 22-22h82' opacity='.55'/%3E%3Cpath d='M22 22c14 0 26 10 26 24M22 22c0 14 10 26 24 26M22 22c8 8 8 16 0 24M22 22c8 8 16 8 24 0' opacity='.9'/%3E%3Ccircle cx='22' cy='22' r='3' fill='%23d9b66a'/%3E%3C/svg%3E") no-repeat center/contain}
+.corner.tl{top:12px;left:12px}
+.corner.tr{top:12px;right:12px;transform:scaleX(-1)}
+.corner.bl{bottom:12px;left:12px;transform:scaleY(-1)}
+.corner.br{bottom:12px;right:12px;transform:scale(-1,-1)}
+
+/* ---------- headings ---------- */
+.sec-title{font-family:var(--display);font-weight:600;text-align:center;font-size:1.95rem;line-height:1.3;color:var(--forest)}
+.sec-sub{text-align:center;color:#6b5a6e;font-size:.95rem;margin:6px auto 0;max-width:320px}
+.divider{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold);margin:16px 0 34px}
+.divider::before,.divider::after{content:"";width:56px;height:1px;background:currentColor;opacity:.7}
+.emerald .sec-title{color:#fff}
+
+/* ================= COVER (wedding card) ================= */
+#cover{position:fixed;inset:0;z-index:100;overflow:hidden;color:var(--forest)}
+#cover .door{position:absolute;top:0;bottom:0;width:50%;transition:transform 1.9s cubic-bezier(.7,0,.2,1);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .42 0 0 0 0 .2 0 0 0 .1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(110% 75% at 50% 42%,#fffaf0 0%,#f7ecd5 55%,#ebd7ae 100%);
+  background-size:160px 160px,200% 100%}
+#cover .door.l{left:0;background-position:0 0,left top;box-shadow:inset -16px 0 26px -16px rgba(120,80,20,.3)}
+#cover .door.r{right:0;background-position:0 0,right top;box-shadow:inset 16px 0 26px -16px rgba(120,80,20,.3)}
+#cover.open .door.l{transform:translateX(-101%)}
+#cover.open .door.r{transform:translateX(101%)}
+#cover.gone{display:none}
+#cover .fade{transition:opacity .5s}
+#cover.open .fade{opacity:0;pointer-events:none}
+#cover .frame{position:absolute;inset:16px;border:1.5px solid #b08a3e;z-index:2;pointer-events:none}
+#cover .frame::after{content:"";position:absolute;inset:6px;border:1px solid rgba(176,138,62,.45)}
+#cover .frame .corner{width:84px;height:84px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120' fill='none' stroke='%23b08a3e' stroke-width='1.3' stroke-linecap='round'%3E%3Cpath d='M4 116V30C4 14 14 4 30 4h86'/%3E%3Cpath d='M12 116V34c0-12 10-22 22-22h82' opacity='.55'/%3E%3Cpath d='M22 22c14 0 26 10 26 24M22 22c0 14 10 26 24 26M22 22c8 8 8 16 0 24M22 22c8 8 16 8 24 0' opacity='.9'/%3E%3Ccircle cx='22' cy='22' r='3' fill='%23b08a3e'/%3E%3C/svg%3E")}
+#cover .frame .corner.tl{top:6px;left:6px}
+#cover .frame .corner.tr{top:6px;right:6px}
+#cover .frame .corner.bl{bottom:6px;left:6px}
+#cover .frame .corner.br{bottom:6px;right:6px}
+.gold-line{position:absolute;z-index:2;top:0;bottom:0;left:50%;width:2px;margin-left:-1px;background:linear-gradient(#b08a3e,#e6c987,#b08a3e)}
+.mandala-wrap{position:absolute;left:50%;top:50%;width:min(66vw,262px);aspect-ratio:1;transform:translate(-50%,-50%);z-index:2;pointer-events:none}
+.mandala-wrap svg{width:100%;height:100%;animation:spin 120s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.cv-top{position:absolute;z-index:3;top:54px;left:0;right:0;text-align:center;padding:0 34px;pointer-events:none}
+.cv-top small{display:block;font-size:.8rem;color:var(--maroon)}
+.cv-top .lbl{display:flex;align-items:center;justify-content:center;gap:10px;margin:12px 0 4px;font-size:.78rem;color:#8a6a2c}
+.cv-top .lbl::before,.cv-top .lbl::after{content:"";width:34px;height:1px;background:#b08a3e}
+.cv-top h1{font-family:var(--display);font-weight:600;font-size:clamp(1.9rem,8.4vw,2.4rem);line-height:1.35;color:var(--forest)}
+.cv-top h1 i{font-family:var(--latin);font-style:italic;font-weight:500;color:var(--marigold);margin:0 .1em}
+.cv-bottom{position:absolute;z-index:3;bottom:54px;left:0;right:0;text-align:center;padding:0 34px;pointer-events:none}
+.cv-bottom .date{display:block;font-size:.95rem;letter-spacing:.16em;color:var(--forest)}
+.cv-bottom .tap{display:block;margin-top:10px;font-size:.85rem;color:var(--maroon)}
+.seal{position:absolute;z-index:4;top:50%;left:50%;width:92px;height:92px;margin:-46px 0 0 -46px;border:none;border-radius:50%;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(circle at 35% 28%,#c4444e 0%,#9a2530 45%,#66131c 100%);
+  box-shadow:inset 0 0 0 5px rgba(0,0,0,.08),inset 0 0 0 7px rgba(243,217,154,.45),0 10px 22px rgba(90,20,30,.45),0 0 0 8px rgba(176,138,62,.2);
+  animation:pulse 2.4s ease-in-out infinite}
+.seal svg{width:46px;height:46px}
+.seal:focus-visible{outline:3px solid var(--forest);outline-offset:6px}
+@keyframes pulse{
+  0%,100%{box-shadow:inset 0 0 0 5px rgba(0,0,0,.08),inset 0 0 0 7px rgba(243,217,154,.45),0 10px 22px rgba(90,20,30,.45),0 0 0 8px rgba(176,138,62,.2)}
+  50%{box-shadow:inset 0 0 0 5px rgba(0,0,0,.08),inset 0 0 0 7px rgba(243,217,154,.45),0 10px 22px rgba(90,20,30,.45),0 0 0 18px rgba(176,138,62,.07)}}
+@media (max-height:640px){.mandala-wrap{width:210px}.cv-top{top:40px}.cv-bottom{bottom:40px}.cv-top h1{font-size:1.8rem}}
+
+/* petals */
+#petals{position:fixed;inset:0;pointer-events:none;z-index:90;overflow:hidden}
+.petal{position:absolute;top:-30px;border-radius:70% 0 70% 0;opacity:.92;animation:fall linear forwards}
+@keyframes fall{to{transform:translate3d(var(--dx),110vh,0) rotate(var(--rot))}}
+
+/* ================= HERO ================= */
+.hero{min-height:100vh;min-height:100svh;padding:0 24px 64px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.toran{width:calc(100% + 48px);margin:0 -24px;height:auto;display:block;flex:none;position:relative;z-index:2}
+.sway{transform-box:fill-box;transform-origin:50% 0;animation:sway 5s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(-1.4deg)}50%{transform:rotate(1.4deg)}}
+.hero .invite{font-size:.82rem;opacity:.8;margin-top:6px}
+.hero .blessing{font-size:.8rem;opacity:.75;margin-top:2px}
+.hero h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,12vw,3.5rem);line-height:1.15;margin-top:22px;
+  background:linear-gradient(180deg,var(--gold-hi),var(--gold) 70%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .and{display:block;font-family:var(--latin);font-style:italic;font-size:1.3rem;color:var(--gold);-webkit-text-fill-color:var(--gold);margin:0}
+.hero .rule{width:150px;height:1px;margin:20px auto 16px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.hero .date{font-size:1.05rem;letter-spacing:.2em;color:#fff}
+.hero .place{font-size:.9rem;opacity:.8;margin-top:2px}
+
+/* photo arch + slideshow */
+.arch{position:relative;margin:30px auto 0;width:min(80%,320px);aspect-ratio:3/4}
+.arch .ring{position:absolute;inset:-9px;border-radius:999px 999px 24px 24px;border:1px solid rgba(217,182,106,.6)}
+.arch .ring::after{content:"";position:absolute;inset:4px;border-radius:inherit;border:1px solid rgba(217,182,106,.25)}
+.slides{position:absolute;inset:0;border-radius:999px 999px 18px 18px;overflow:hidden;box-shadow:0 24px 50px -16px rgba(0,0,0,.65),0 0 0 3px rgba(255,255,255,.08)}
+.slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.12);transition:opacity 1.4s ease,transform 7s linear}
+.slides img.on{opacity:1;transform:scale(1)}
+.slides::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,42,33,0) 60%,rgba(10,42,33,.45));pointer-events:none}
+.dots{display:flex;gap:8px;justify-content:center;margin-top:24px}
+.dots i{width:7px;height:7px;border-radius:50%;background:rgba(236,212,154,.35);transition:all .4s}
+.dots i.on{width:22px;border-radius:6px;background:var(--gold)}
+.scroll-hint{margin-top:18px;font-size:.82rem;opacity:.75;animation:nudge 2s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateY(6px)}}
+
+/* ================= COUPLE ================= */
+.person{background:rgba(255,255,255,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.9);
+  border-radius:28px;padding:26px 22px 26px;text-align:center;box-shadow:0 22px 44px -22px rgba(90,40,100,.45);max-width:400px;margin:0 auto}
+.avatar{width:140px;height:140px;margin:-72px auto 14px;border-radius:50%;border:5px solid #fff;outline:2px solid var(--gold);background:var(--lilac-deep);overflow:hidden;box-shadow:0 12px 26px -10px rgba(0,0,0,.45)}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.person .role{font-size:.85rem;color:var(--marigold);font-weight:600}
+.person h3{font-family:var(--display);font-weight:600;font-size:1.45rem;color:var(--forest);margin:4px 0 10px;line-height:1.35}
+.person p{font-size:.95rem;color:#4b3f50}
+.amp{text-align:center;font-family:var(--latin);font-style:italic;font-size:3rem;color:var(--gold);line-height:1;margin:46px 0 78px}
+.couple-block{display:flex;flex-direction:column}
+.couple-block .person:first-child{margin-top:74px}
+
+/* ================= COUNTDOWN ================= */
+.count{text-align:center}
+.count .sec-title em{font-family:var(--latin);color:var(--marigold)}
+.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:380px;margin:30px auto 0}
+.timer div{border:1px solid rgba(217,182,106,.4);border-radius:16px;padding:16px 4px 12px;background:rgba(0,0,0,.2)}
+.timer b{display:block;font-family:var(--display);font-weight:600;font-size:1.9rem;color:#fff;line-height:1.2}
+.timer span{font-size:.8rem;opacity:.85}
+.count .date-line{margin-top:22px;font-size:.95rem;opacity:.9}
+
+/* ================= CELEBRATION ================= */
+.card-dark{max-width:400px;margin:0 auto;border-radius:26px;overflow:hidden;background:rgba(255,255,255,.85);border:1px solid #fff;box-shadow:0 22px 46px -22px rgba(80,30,90,.5)}
+.card-head{background:linear-gradient(180deg,#14573f,var(--forest));color:var(--gold-soft);text-align:center;padding:22px 16px 20px;position:relative}
+.card-head::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.card-head small{font-size:.85rem;opacity:.85}
+.card-head .big{font-family:var(--display);font-size:3.6rem;line-height:1.05;color:#fff}
+.card-head .mon{font-size:1.05rem}
+.rows{padding:8px 20px 6px}
+.row{display:flex;gap:14px;align-items:flex-start;padding:15px 0;border-bottom:1px dashed #e0c9de}
+.row:last-child{border:none}
+.ico{flex:0 0 38px;height:38px;border-radius:50%;background:var(--blush);display:flex;align-items:center;justify-content:center;font-size:1.05rem}
+.row small{display:block;font-size:.8rem;color:#8a7490}
+.row strong{font-weight:600;font-size:1.02rem;color:var(--forest)}
+.row p{font-size:.9rem;color:#5a4a5f;line-height:1.5}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:calc(100% - 40px);margin:6px 20px 22px;padding:14px;background:var(--forest);color:var(--gold-soft);border:none;border-radius:999px;font-family:var(--sans);font-size:1rem;font-weight:600;cursor:pointer;text-decoration:none}
+.btn:focus-visible{outline:3px solid var(--marigold);outline-offset:3px}
+.btn.ghost{background:#fff;color:var(--forest);border:1px solid var(--gold);width:auto;margin:14px auto 0;padding:11px 22px;display:inline-flex}
+.map-card{max-width:400px;margin:24px auto 0;background:rgba(255,255,255,.85);border:1px solid #fff;border-radius:26px;padding:14px;box-shadow:0 22px 46px -22px rgba(80,30,90,.5);text-align:center}
+.map-card iframe{width:100%;height:210px;border:0;border-radius:18px;display:block}
+.map-card h4{font-family:var(--display);font-weight:600;font-size:1.25rem;color:var(--forest);margin-top:14px}
+.map-card p{font-size:.9rem;color:#5a4a5f;line-height:1.5}
+
+/* ================= CLOSING ================= */
+.closing{text-align:center;padding:90px 22px 100px}
+.closing .bgphoto{position:absolute;inset:0;z-index:0;background:url("images/photo-close.jpg") center 30%/cover;opacity:.2;filter:saturate(.7);mask-image:linear-gradient(180deg,transparent,#000 25%,#000 70%,transparent);-webkit-mask-image:linear-gradient(180deg,transparent,#000 25%,#000 70%,transparent)}
+.closing .with{font-size:.85rem;opacity:.85;}
+.closing h3{font-family:var(--display);font-weight:600;font-size:2rem;color:var(--marigold);margin:8px 0 14px;line-height:1.3;text-shadow:0 0 22px rgba(240,138,28,.45)}
+.closing .msg{max-width:340px;margin:0 auto;font-size:1rem;color:#efe4c8}
+.closing .names{font-family:var(--display);font-weight:600;font-size:2rem;color:#fff;margin-top:30px}
+.closing .names i{font-family:var(--latin);color:var(--marigold);margin:0 .15em}
+.closing .when{font-size:.95rem;opacity:.9;margin-top:4px;}
+.hosts{margin:42px auto 0;max-width:380px;padding:22px 18px;border:1px solid rgba(217,182,106,.35);border-radius:22px;background:rgba(8,32,25,.55);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.hosts h5{font-family:var(--display);font-weight:600;font-size:1.15rem;color:var(--gold);margin-bottom:12px}
+.hosts ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;text-align:left;font-size:.92rem}
+.hosts li{padding-left:14px;position:relative}
+.hosts li::before{content:"❀";position:absolute;left:0;color:var(--gold);font-size:.7rem;top:3px}
+.hosts .all{margin-top:14px;text-align:center;color:#fff}
+.final{margin-top:36px;font-size:.95rem;color:var(--gold-soft)}
+.sparkle{position:absolute;width:6px;height:6px;border-radius:50%;background:radial-gradient(circle,#fff,rgba(255,226,150,0) 70%);animation:tw 3s ease-in-out infinite;pointer-events:none;z-index:1}
+@keyframes tw{0%,100%{opacity:0;transform:scale(.4)}50%{opacity:1;transform:scale(2.2)}}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+
+#music{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom));z-index:80;width:46px;height:46px;border-radius:50%;border:1px solid var(--gold);background:var(--forest);color:var(--gold-soft);font-size:1.2rem;cursor:pointer;display:none}
+#music.show{display:block}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition-duration:.01ms!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
 </head>
-<body>
-  <main class="page">
-    <header class="hero" id="home">
-      <div class="flower left">❀</div><div class="flower right">❀</div>
-      <div class="topline">॥ श्री गणेशाय नमः ॥ &nbsp;&nbsp; ॥ श्री अनंगीर बाबा प्रसन्न ॥</div>
-      <div class="ganesh">🪔</div>
-      <div class="eyebrow">मंगल परिणय सोहळा</div>
-      <h1>शुभविवाह</h1>
-      <p class="intro">॥ सस्नेह निमंत्रण ॥</p>
-      <div class="couple">चि. सौ. कां. वैष्णवी <span class="aka">उर्फ तेजस्विनी</span></div>
-      <div class="aka">आणि</div>
-      <div class="couple">चि. ऋषभ <span class="aka">उर्फ रुपेश</span></div>
-      <div class="divider">✧ शुभमंगल ✧</div>
-      <div class="date">सोमवार, दि. २८ डिसेंबर २०२६</div>
-      <div class="muhurta">सकाळी ११ वा. १९ मि. · गोपाल मुहूर्त</div>
-      <div class="scroll">अधिक माहितीसाठी खाली स्क्रोल करा ↓</div>
-    </header>
+<body class="locked">
 
-    <section class="content">
-      <h2>वधू-वर परिचय</h2>
-      <div class="two">
-        <div class="panel">
-          <h3>वधू</h3>
-          <div class="names"><strong>चि. सौ. कां. वैष्णवी उर्फ तेजस्विनी</strong><br>
-          सौ. छायाताई व श्री. अनिलराव किसनराव कावरे<br>
-          यांची ज्येष्ठ कन्या<br>
-          श्रीमती राजकन्याबाई कि. कावरे यांची नात<br>
-          रा. टाकरखेडा (कावरे), ह.मु. दारापूर पांढरी,<br>ता. भातकुली, जि. अमरावती</div>
-        </div>
-        <div class="panel">
-          <h3>वर</h3>
-          <div class="names"><strong>चि. ऋषभ उर्फ रुपेश</strong><br>
-          सौ. ममताताई व श्री. नरेंद्रराव विश्वासराव कडू<br>
-          यांचे ज्येष्ठ चिरंजीव<br>
-          रा. तोडगाव<br>
-          ह.मु. पुणे रामेश्वर हाऊसिंग सोसायटी,<br>
-          आर. एच. ७५, शाहूनगर, चिंचवड, पुणे १९</div>
-        </div>
-      </div>
-    </section>
+<!-- ============ COVER ============ -->
+<div id="cover">
+  <div class="door l"></div>
+  <div class="door r"></div>
+  <div class="gold-line fade"></div>
+  <div class="frame fade"><span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span></div>
+  <div class="mandala-wrap fade"><svg id="mandala" viewBox="-150 -150 300 300" aria-hidden="true"></svg></div>
+  <div class="cv-top fade">
+    <small>॥ श्री गणेशाय नमः ॥</small>
+    <div class="lbl">शुभविवाह</div>
+    <h1>वैष्णवी <i>&amp;</i> ऋषभ</h1>
+  </div>
+  <div class="cv-bottom fade">
+    <span class="date">२८ · १२ · २०२६</span>
+    <span class="tap">उघडण्यासाठी सीलवर टॅप करा</span>
+  </div>
+  <button class="seal fade" id="sealBtn" aria-label="निमंत्रण उघडा"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="#f3d99a"><path d="M12 3C14.8 7 14.8 12 12 16.5 9.2 12 9.2 7 12 3Z"/><path fill-opacity=".85" d="M12 4.5C14.8 8.5 14.8 13 12 17 9.2 13 9.2 8.5 12 4.5Z" transform="rotate(38 12 18)"/><path fill-opacity=".85" d="M12 4.5C14.8 8.5 14.8 13 12 17 9.2 13 9.2 8.5 12 4.5Z" transform="rotate(-38 12 18)"/><path fill-opacity=".65" d="M12 6C14.5 9.5 14.5 13.5 12 17 9.5 13.5 9.5 9.5 12 6Z" transform="rotate(72 12 18)"/><path fill-opacity=".65" d="M12 6C14.5 9.5 14.5 13.5 12 17 9.5 13.5 9.5 9.5 12 6Z" transform="rotate(-72 12 18)"/></g><path d="M5 20.2Q12 23.4 19 20.2" fill="none" stroke="#f3d99a" stroke-width="1.2" stroke-linecap="round"/></svg></button>
+</div>
+<div id="petals" aria-hidden="true"></div>
+<button id="music" aria-label="संगीत चालू/बंद">♪</button>
 
-    <section class="content">
-      <h2>विवाह सोहळा</h2>
-      <div class="panel">
-        <div class="label">विवाह मुहूर्त</div>
-        <div class="date">सोमवार · २८/१२/२०२६</div>
-        <div class="muhurta">सकाळी ११:१९ वाजता · गोपाल मुहूर्त</div>
-        <div class="divider">❀</div>
-        <div class="label">विवाह स्थळ</div>
-        <div class="venue">प्रसाद मंगलम कार्यालय</div>
-        अमरावती रोड, दर्यापूर,<br>ता. दर्यापूर, जि. अमरावती
-        <br><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Prasad+Mangal+Karyalay+Daryapur+Amravati">Google Maps वर पहा</a>
-      </div>
-      <div class="countdown" id="countdown">
-        <div><b id="days">--</b><span>दिवस</span></div>
-        <div><b id="hours">--</b><span>तास</span></div>
-        <div><b id="minutes">--</b><span>मिनिटे</span></div>
-        <div><b id="seconds">--</b><span>सेकंद</span></div>
-      </div>
-    </section>
+<main>
 
-    <section class="content">
-      <h2>आपली उपस्थिती प्रार्थनीय</h2>
-      <p class="names">श्री गणेशाच्या व आसरा मातेच्या कृपेने<br>
-      संस्कृती व परंपरेचा आदर ठेवून नव्या आयुष्याची सुरुवात करणाऱ्या<br>
-      वधू-वरास शुभाशीर्वाद देण्यासाठी आपण सहकुटुंब उपस्थित राहावे,<br>
-      ही विनम्र विनंती.</p>
-      <div class="divider">✧ मंगलमय शुभेच्छा ✧</div>
-      <h2>आपले कुटुंबीय व निमंत्रक</h2>
-      <div class="familygrid family">
-        <p>श्री. अनिलराव कि. कावरे</p><p>श्री. सुनिलराव कि. कावरे</p>
-        <p>श्री. संजयराव श्री. कावरे</p><p>श्री. प्रवीणराव सु. कावरे</p>
-        <p>श्री. नरेंद्र उ. कावरे</p><p>श्री. सुरेंद्र उ. कावरे</p>
-        <p>चि. अक्षय स. कावरे</p><p>चि. दर्शन सु. कावरे</p>
-        <p>चि. ओम प्र. कावरे</p><p>चि. प्रभु अ. कावरे</p>
-      </div>
-      <p class="names" style="margin-top:18px">व समस्त कावरे परिवार</p>
-    </section>
+<!-- ============ HERO ============ -->
+<header class="hero emerald">
+  <svg class="toran" id="toran" viewBox="0 0 480 150" aria-hidden="true"></svg>
 
-    <div class="closing">
-      <div style="font-size:32px">🌸 🪷 🌸</div>
-      <strong>आपली उपस्थिती हेच आमच्यासाठी आशीर्वादाचे धन!</strong><br>
-      विवाह सोहळ्यास सहकुटुंब सहपरिवार उपस्थित राहावे.
+  <p class="blessing">॥ श्री गणेशाय नमः ॥ &nbsp; ॥ श्री अनंगीर बाबा प्रसन्न ॥</p>
+  <p class="invite">॥ सस्नेह निमंत्रण ॥</p>
+  <h2>
+    वैष्णवी
+    <span class="and">and</span>
+    ऋषभ
+  </h2>
+  <div class="rule"></div>
+  <p class="date">२८ · १२ · २०२६</p>
+  <p class="place">दर्यापूर, अमरावती</p>
+
+  <div class="arch">
+    <div class="ring"></div>
+    <div class="slides" id="slides">
+      <img src="images/photo-close.jpg" alt="वैष्णवी आणि ऋषभ" class="on" style="object-position:50% 35%">
+      <img src="images/photo-walk.jpg"  alt="वैष्णवी आणि ऋषभ" style="object-position:50% 40%">
+      <img src="images/photo-bride.jpg" alt="वैष्णवी" style="object-position:50% 55%">
     </div>
-    <footer>सप्रेम निमंत्रण · वैष्णवी & ऋषभ यांच्या शुभविवाहानिमित्त</footer>
-  </main>
-  <script>
-    // Wedding date: 28 December 2026, 11:19 AM (India Standard Time)
-    const target = new Date("2026-12-28T11:19:00+05:30").getTime();
-    const ids = ["days","hours","minutes","seconds"];
-    function updateCountdown(){
-      let diff = target - Date.now();
-      if(diff <= 0){ document.getElementById("countdown").innerHTML = "<b>शुभविवाह सोहळा सुरू झाला आहे! 💐</b>"; return; }
-      const values = [Math.floor(diff/86400000),Math.floor(diff%86400000/3600000),Math.floor(diff%3600000/60000),Math.floor(diff%60000/1000)];
-      ids.forEach((id,i)=>document.getElementById(id).textContent=String(values[i]).padStart(2,"0"));
+  </div>
+  <div class="dots" id="dots"><i class="on"></i><i></i><i></i></div>
+  <p class="scroll-hint">खाली स्क्रोल करा ↓</p>
+</header>
+
+<!-- ============ COUPLE ============ -->
+<section id="couple" class="lilac">
+  <h2 class="sec-title reveal">दोन मने, एक धागा</h2>
+  <p class="sec-sub reveal">दोन कुटुंबे, दोन परंपरा आणि एक नवी सुरुवात.</p>
+  <div class="divider reveal">❀</div>
+
+  <div class="couple-block">
+    <article class="person reveal">
+      <div class="avatar"><img src="images/avatar-groom.jpg" alt="चि. ऋषभ"></div>
+      <div class="role">वर</div>
+      <h3>चि. ऋषभ उर्फ रुपेश</h3>
+      <p>
+        सौ. ममताताई व श्री. नरेंद्रराव विश्वासराव कडू यांचे ज्येष्ठ चिरंजीव<br>
+        रा. तोडगाव<br>
+        ह.मु. पुणे रामेश्वर हाऊसिंग सोसायटी, आर. एच. ७५, शाहूनगर, चिंचवड, पुणे १९
+      </p>
+    </article>
+
+    <div class="amp reveal">&amp;</div>
+
+    <article class="person reveal">
+      <div class="avatar"><img src="images/avatar-bride.jpg" alt="चि. सौ. कां. वैष्णवी"></div>
+      <div class="role">वधू</div>
+      <h3>चि. सौ. कां. वैष्णवी उर्फ तेजस्विनी</h3>
+      <p>
+        सौ. छायाताई व श्री. अनिलराव किसनराव कावरे यांची ज्येष्ठ कन्या<br>
+        श्रीमती राजकन्याबाई कि. कावरे यांची नात<br>
+        रा. टाकरखेडा (कावरे), ह.मु. दारापूर पांढरी, ता. भातकुली, जि. अमरावती
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ COUNTDOWN ============ -->
+<section class="count emerald">
+  <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+  <h2 class="sec-title reveal">लग्नाला उरले <em>फक्त</em></h2>
+  <div class="timer reveal" role="timer" aria-live="off">
+    <div><b id="d">--</b><span>दिवस</span></div>
+    <div><b id="h">--</b><span>तास</span></div>
+    <div><b id="m">--</b><span>मिनिटे</span></div>
+    <div><b id="s">--</b><span>सेकंद</span></div>
+  </div>
+  <p class="date-line reveal">सोमवार, २८ डिसेंबर २०२६</p>
+</section>
+
+<!-- ============ CELEBRATION ============ -->
+<section id="celebration" class="lilac">
+  <h2 class="sec-title reveal">विवाह सोहळा</h2>
+  <div class="divider reveal">❀</div>
+
+  <div class="card-dark reveal">
+    <div class="card-head">
+      <small>सोमवार</small>
+      <div class="big">२८</div>
+      <div class="mon">डिसेंबर २०२६</div>
+    </div>
+    <div class="rows">
+      <div class="row"><div class="ico">🪔</div><div><small>विवाह मुहूर्त</small><strong>गोपाल मुहूर्त</strong></div></div>
+      <div class="row"><div class="ico">🕚</div><div><small>वेळ</small><strong>सकाळी ११ वा. १९ मि.</strong></div></div>
+      <div class="row"><div class="ico">📍</div>
+        <div><small>विवाह स्थळ</small><strong>प्रसाद मंगलम कार्यालय</strong>
+          <p>अमरावती रोड, दर्यापूर, ता. दर्यापूर, जि. अमरावती</p></div></div>
+    </div>
+    <button class="btn" id="calBtn">📅 कॅलेंडरमध्ये जोडा</button>
+  </div>
+
+  <div class="map-card reveal">
+    <iframe title="विवाह स्थळाचा नकाशा" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://maps.google.com/maps?q=Prasad+Mangal+Karyalay+Daryapur+Amravati&output=embed"></iframe>
+    <h4>प्रसाद मंगलम कार्यालय</h4>
+    <p>अमरावती रोड, दर्यापूर, जि. अमरावती</p>
+    <a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Prasad+Mangal+Karyalay+Daryapur+Amravati">➤ मार्ग पहा</a>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="closing emerald" id="closing">
+  <div class="bgphoto"></div>
+  <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+  <p class="with reveal">सप्रेम निमंत्रण</p>
+  <h3 class="reveal">आपली उपस्थिती प्रार्थनीय</h3>
+  <p class="msg reveal">श्री गणेशाच्या व आसरा मातेच्या कृपेने संस्कृती व परंपरेचा आदर ठेवून नव्या आयुष्याची सुरुवात करणाऱ्या वधू-वरास शुभाशीर्वाद देण्यासाठी आपण सहकुटुंब उपस्थित राहावे, ही विनम्र विनंती.</p>
+
+  <div class="names reveal">वैष्णवी <i>&amp;</i> ऋषभ</div>
+  <div class="when reveal">२८ · १२ · २०२६ · दर्यापूर</div>
+
+  <div class="hosts reveal">
+    <h5>आपले कुटुंबीय व निमंत्रक</h5>
+    <ul>
+      <li>श्री. अनिलराव कि. कावरे</li><li>श्री. सुनिलराव कि. कावरे</li>
+      <li>श्री. संजयराव श्री. कावरे</li><li>श्री. प्रवीणराव सु. कावरे</li>
+      <li>श्री. नरेंद्र उ. कावरे</li><li>श्री. सुरेंद्र उ. कावरे</li>
+      <li>चि. अक्षय स. कावरे</li><li>चि. दर्शन सु. कावरे</li>
+      <li>चि. ओम प्र. कावरे</li><li>चि. प्रभु अ. कावरे</li>
+    </ul>
+    <p class="all">व समस्त कावरे परिवार</p>
+  </div>
+  <p class="final reveal">🌸 आपली उपस्थिती हेच आमच्यासाठी आशीर्वादाचे धन! 🌸</p>
+</section>
+
+</main>
+
+<audio id="bgm" src="music.mp3" loop preload="none"></audio>
+
+<script>
+const $ = s => document.querySelector(s);
+const toMr = n => String(n).replace(/\d/g, d => '०१२३४५६७८९'[d]);
+
+/* ---------- toran: scalloped marigold swags + hanging strings (as in the video) ---------- */
+(function toran(){
+  const svg = $('#toran'), NS = 'http://www.w3.org/2000/svg';
+  const el = (tag, a, parent = svg) => { const e = document.createElementNS(NS, tag); for (const k in a) e.setAttribute(k, a[k]); parent.appendChild(e); return e; };
+
+  const defs = el('defs', {});
+  const g1 = el('radialGradient', {id:'mg', cx:'42%', cy:'38%', r:'70%'}, defs);
+  [['0','#ffc247'],['.55','#f68a1e'],['1','#d9560e']].forEach(([o,c]) => el('stop', {offset:o,'stop-color':c}, g1));
+  const g2 = el('radialGradient', {id:'lv', cx:'40%', cy:'35%', r:'70%'}, defs);
+  [['0','#cdb6ee'],['1','#8f74c9']].forEach(([o,c]) => el('stop', {offset:o,'stop-color':c}, g2));
+
+  const flower = (parent, x, y, r) => {
+    el('circle', {cx:x, cy:y, r, fill:'url(#mg)'}, parent);
+    el('circle', {cx:x, cy:y, r:r*.42, fill:'#c2490c', opacity:.55}, parent);
+    el('circle', {cx:x-r*.25, cy:y-r*.3, r:r*.22, fill:'#ffe08a', opacity:.8}, parent);
+  };
+  const leaf = (parent, x, y, rot, s=1) => {
+    el('path', {d:`M0 0C6 -6 14 -6 20 0C14 6 6 6 0 0Z`, fill:'#3f8f3a', transform:`translate(${x} ${y}) rotate(${rot}) scale(${s})`}, parent);
+  };
+  const bud = (parent, x, y) => {            // big marigold with green calyx at the end of a string
+    leaf(parent, x, y+4, 120, .7); leaf(parent, x, y+4, 60, .7); leaf(parent, x, y+6, 90, .7);
+    flower(parent, x, y, 9.5);
+  };
+
+  const n = 6, w = 480 / n, topY = 8, sag = 26;
+  const swagG = el('g', {});
+  /* swags */
+  for (let k = 0; k < n; k++){
+    const x0 = k*w, x1 = x0 + w, cx = x0 + w/2, cy = topY + sag*2;
+    const steps = 10;
+    for (let i = 0; i <= steps; i++){
+      const t = i/steps, a = (1-t)*(1-t), b = 2*(1-t)*t, c = t*t;
+      flower(swagG, a*x0 + b*cx + c*x1, a*topY + b*cy + c*topY, 6.6);
     }
-    updateCountdown(); setInterval(updateCountdown,1000);
-  </script>
+  }
+  /* top rail of flowers */
+  for (let x = 4; x < 480; x += 11) flower(swagG, x, topY - 2, 5.4);
+
+  /* junction: leaves + marigold string */
+  for (let k = 0; k <= n; k++){
+    const x = k*w;
+    const g = el('g', {class:'sway', style:`animation-delay:${-(k*.7)}s`});
+    leaf(g, x, topY+4, 120, 1.1); leaf(g, x, topY+4, 60, 1.1); leaf(g, x, topY+5, 90, 1.2);
+    el('circle', {cx:x, cy:topY+6, r:6, fill:'#4aa043'}, g);
+    el('line', {x1:x, y1:topY+10, x2:x, y2:topY+82, stroke:'#c8a14a','stroke-width':.9}, g);
+    for (let m = 0, y = topY + 22; m < 4; m++, y += 12) flower(g, x, y, 6.4);
+    bud(g, x, topY + 76);
+  }
+
+  /* mid swag: lilac flower strand ending in marigold ball */
+  for (let k = 0; k < n; k++){
+    const x = k*w + w/2;
+    const g = el('g', {class:'sway', style:`animation-delay:${-(k*.9+.4)}s`});
+    const top = topY + sag + 6, len = 74;
+    el('line', {x1:x, y1:top, x2:x, y2:top+len, stroke:'#9a86c4','stroke-width':.8}, g);
+    for (let i = 0; i < 16; i++){
+      const y = top + 6 + i*(len-8)/16, s = 1 - i/34;
+      const dx = (i%2 ? 3.4 : -3.4) * s;
+      el('ellipse', {cx:x+dx, cy:y, rx:3.6*s+1, ry:2.6*s+.8, fill: i%3 ? 'url(#lv)' : '#efe4fb', transform:`rotate(${i%2?24:-24} ${x+dx} ${y})`}, g);
+    }
+    bud(g, x, top + len + 6);
+  }
+})();
+
+/* ---------- cover mandala (gold line-art) ---------- */
+(function(){
+  const svg = $('#mandala'), NS = 'http://www.w3.org/2000/svg';
+  const add = (tag, a) => { const e = document.createElementNS(NS, tag); for (const k in a) e.setAttribute(k, a[k]); svg.appendChild(e); return e; };
+  const line = {fill:'none', stroke:'#b08a3e', 'stroke-width':.9, 'stroke-opacity':.85};
+  add('circle', {...line, r:146}); add('circle', {...line, r:140, 'stroke-opacity':.5});
+  add('circle', {...line, r:133, 'stroke-width':2.2, 'stroke-dasharray':'.1 6', 'stroke-linecap':'round'});
+  add('circle', {...line, r:124, 'stroke-opacity':.6});
+  for (let i = 0; i < 24; i++) add('path', {...line, d:'M0 -72C11 -90 11 -108 0 -122C-11 -108 -11 -90 0 -72Z', transform:`rotate(${i*15})`});
+  add('circle', {...line, r:70, 'stroke-opacity':.6});
+  for (let i = 0; i < 12; i++) add('path', {...line, d:'M0 -42C8 -52 8 -62 0 -70C-8 -62 -8 -52 0 -42Z', transform:`rotate(${i*30+15})`});
+  add('circle', {...line, r:40});
+})();
+
+/* ---------- hero slideshow ---------- */
+(function slideshow(){
+  const imgs = [...document.querySelectorAll('#slides img')];
+  const dots = [...document.querySelectorAll('#dots i')];
+  let i = 0;
+  setInterval(() => {
+    imgs[i].classList.remove('on'); dots[i].classList.remove('on');
+    i = (i + 1) % imgs.length;
+    imgs[i].classList.add('on'); dots[i].classList.add('on');
+  }, 4600);
+})();
+
+/* ---------- petals ---------- */
+function rain(count = 46){
+  const box = $('#petals'), colors = ['#f08a1c','#f6a623','#e8486a','#ffd1dc','#fff2c9'];
+  for (let i = 0; i < count; i++){
+    const p = document.createElement('span'); p.className = 'petal';
+    const size = 8 + Math.random()*12;
+    p.style.cssText = `left:${Math.random()*100}%;width:${size}px;height:${size}px;background:${colors[i%colors.length]};--dx:${Math.random()*160-80}px;--rot:${Math.random()*720}deg;animation-duration:${4+Math.random()*4}s;animation-delay:${Math.random()*1.6}s`;
+    box.appendChild(p); setTimeout(() => p.remove(), 10500);
+  }
+}
+
+/* ---------- open the invitation ---------- */
+const cover = $('#cover');
+function openInvite(){
+  if (cover.classList.contains('open')) return;
+  cover.classList.add('open'); rain();
+  $('#bgm').play().then(() => $('#music').classList.add('show')).catch(() => {});
+  setTimeout(() => { cover.classList.add('gone'); document.body.classList.remove('locked'); }, 1600);
+}
+$('#sealBtn').addEventListener('click', openInvite);
+$('#music').addEventListener('click', () => { const a = $('#bgm'); a.paused ? a.play() : a.pause(); });
+
+/* ---------- countdown ---------- */
+const target = new Date('2026-12-28T11:19:00+05:30').getTime();
+function tick(){
+  let diff = Math.max(0, target - Date.now());
+  const d = Math.floor(diff/86400000); diff %= 86400000;
+  const h = Math.floor(diff/3600000);  diff %= 3600000;
+  const m = Math.floor(diff/60000), s = Math.floor((diff%60000)/1000);
+  $('#d').textContent = toMr(d);
+  $('#h').textContent = toMr(String(h).padStart(2,'0'));
+  $('#m').textContent = toMr(String(m).padStart(2,'0'));
+  $('#s').textContent = toMr(String(s).padStart(2,'0'));
+}
+tick(); setInterval(tick, 1000);
+
+/* ---------- add to calendar ---------- */
+$('#calBtn').addEventListener('click', () => {
+  const ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Wedding//MR','BEGIN:VEVENT',
+    'UID:vaishnavi-rushabh-2026@wedding','DTSTAMP:20261101T000000Z',
+    'DTSTART:20261228T054900Z','DTEND:20261228T094900Z',
+    'SUMMARY:वैष्णवी & ऋषभ यांचा शुभविवाह',
+    'LOCATION:प्रसाद मंगलम कार्यालय\\, अमरावती रोड\\, दर्यापूर\\, जि. अमरावती',
+    'DESCRIPTION:गोपाल मुहूर्त - सकाळी ११ वा. १९ मि.','END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([ics], {type:'text/calendar;charset=utf-8'}));
+  a.download = 'shubhavivah.ics'; document.body.appendChild(a); a.click(); a.remove();
+});
+
+/* ---------- reveal on scroll ---------- */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+}), {threshold:.15});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* ---------- twinkles in closing ---------- */
+(function(){
+  const sec = $('#closing');
+  for (let i = 0; i < 16; i++){
+    const s = document.createElement('i'); s.className = 'sparkle';
+    s.style.left = Math.random()*100 + '%'; s.style.top = Math.random()*55 + '%';
+    s.style.animationDelay = Math.random()*3 + 's'; s.style.animationDuration = 2.2 + Math.random()*2.4 + 's';
+    sec.appendChild(s);
+  }
+})();
+</script>
 </body>
 </html>
